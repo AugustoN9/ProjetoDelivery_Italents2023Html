@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo2.css">
+        <link rel="stylesheet" href="css/estiloFlex.css">
+        <title>Contrata</title>
+    </head>
+    <body>
+        <header class="cabecalhoPrincipal">
+            <div class="container">
+                <h1 class="cabecalhoPrincipal-logo">
+                    <a href="#"><img class="logoHouse"
+                            src="./image/logoHouseTransp3.png"></a>
+                </h1>
+                <nav class="cabecalhoPrincipal-nav">
+                    <a class="cabecalhoPrincipal-nav-link" href="index2.html">Home</a>
+                    <a class="cabecalhoPrincipal-nav-link" href="index2.html">Portifolio</a>
+                    <a class="cabecalhoPrincipal-nav-link" href="#">Colaboradores</a>
+                    <a class="cabecalhoPrincipal-nav-link" href="#">Clientes</a>
+                    <a class="cabecalhoPrincipal-nav-link" href="#">Contato</a>
+                    <a class="cabecalhoPrincipal-nav-link" href="login2.html">Entrar</a>
+                </nav>
+            </div>
+        </header>
+        <main class="conteudoPrincipal">
+            <div class="container">
+                <h2 class="subtitulo">Seus Orçamentos Agendados</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Profissional</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr onclick="window.location='servicos.html'">
+                            <th scope="row">1</th>
+                            <td>pintura</td>
+                            <td>Antônio Borges</td>
+                            <td>31.10.2022</td>
+                            <td>09:00</td>
+                        </tr>
+                        <tr onclick="window.location='servicos.html'">
+                            <th scope="row">2</th>
+                            <td>pintura</td>
+                            <td>Antônio Borges</td>
+                            <td>31.10.2022</td>
+                            <td>09:00</td>
+                        </tr>
+                        <tr onclick="window.location='servicos.html'">
+                            <th scope="row">3</th>
+                            <td>pintura</td>
+                            <td>Antônio Borges</td>
+                            <td>31.10.2022</td>
+                            <td>09:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="agendaServico">
+                <h2 class="subtitulo2">Agende um Visita para fazer um Orçamento</h2>
+                <form class="inputAgendaService" action="/action_pa">
+                    <label for="agendaServico">Dia da Visita:</label>
+                    <input type="date"
+                        id="visitaOrçamento" name="visita">
+                    <label for="agendaServico">Horario da Visita:</label>
+                    <select>
+                        <option>09:00</option>
+                        <option>10:00</option>
+                        <option>11:00</option>
+                        <option>12:00</option>
+                        <option>13:00</option>
+                        <option>14:00</option>
+                        <option>15:00</option>
+                        <option>16:00</option>
+                        <option>17:00</option>
+                        <option>18:00</option>
+                    </select>
+                    <label for="agendaServico">Profissional:</label>
+                    <select>
+                        <option>Antônio Borges</option>
+                        <option>Pedro Silva</option>
+                        <option>Ziraudo Lobato</option>
+                    </select>
+
+                    <input type="submit" value="Agendar">
+                </form>
+            </div>
+
+        </main>
+        <footer>
+            <h3>Desenvolvido por @AugustoN9</h3>
+        </footer>
+    </body>
+</html>

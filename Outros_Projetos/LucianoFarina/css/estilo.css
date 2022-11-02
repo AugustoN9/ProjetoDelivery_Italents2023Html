@@ -1,0 +1,84 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #666666;
+    background-color: #b22222;
+
+}
+
+header {
+    -background-color: white;
+    -background-image: url("../image/Banner2Portoalegre.png");
+    -background-repeat: repeat-x;
+    -background-size: 40%;
+    -background-position: center;
+    padding: 0 5% 0 15%;
+    text-align: center;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.logo {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menu {
+    width: 100%;
+    list-style: none;
+    margin-left: 50px;
+    background-color: #b22222;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 0 0 0 10px;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 12px 0 0;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 0;
+}
+
+.menu a:hover {
+    font-weight: bold;
+    transition: 0.7s;
+}
+
+.secao1 {
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../image/wallpaperPredial.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secao2 {
+    width: 100vw;
+    height: 50vh;
+    background-color: #3fee2b;
+}
+
+.secao3 {
+    width: 100vw;
+    height: 50vh;
+    background-color: darkslategrey;
+}
+
+footer {
+    height: 10%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}

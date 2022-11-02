@@ -1,0 +1,90 @@
+.cabecalhoPrincipal {
+    background-color: white;
+}
+
+.cabecalhoPrincipal .container {
+    width: 70%;
+    height: 100px;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal-logo {
+    width: 40%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.cabecalhoPrincipal-logo .logoHouse {
+    width: 20vh;
+    padding: 0;
+}
+
+.cabecalhoPrincipal-nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+
+.cabecalhoPrincipal-nav-link {
+    text-decoration: none;
+    padding: 6px;
+    font-size: large;
+}
+
+.conteudoPrincipal {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 31%;
+    margin: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(3n) {
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.subtitulo {
+    width: 100%;
+    border-bottom: 3px solid white;
+    margin-bottom: 12px;
+    padding: 20px 0 10px 0px;
+    color: white;
+}
+
+
+.subtitulo2 {
+    margin-bottom: 12px;
+    padding: 20px 0 10px 0px;
+    -color: white;
+}
+
+.classifica {
+    text-align: end;
+    padding: 6px 0 10px 0;
+    color: white;
+    font-style: italic;
+}
+
+footer {
+    width: 100%;
+    height: 5vw;
+    text-align: center;
+    padding-top: 3%;
+    bottom: 0;
+    background-color: white;
+}
