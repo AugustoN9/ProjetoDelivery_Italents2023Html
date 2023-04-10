@@ -95,7 +95,7 @@ section#pesquisa {
 section#pesquisa i {
     position: absolute;
     padding-top: .2rem;
-    padding-left: 3rem;
+    padding-left: 4.2rem;
     font-size: 30px;
     color: var(--minha-cor-fonte);
 }
@@ -269,19 +269,58 @@ section#avaliacao {
 /* formulario */
 
 .formulario {
-    width: 60%;
-    margin-left: 20%;
+    width: 96%;
+    margin-top: -5%;
+    margin-left: 2%;
     padding: 5rem;
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
-button {
-    margin: 2rem 0;
+@media screen and (min-width:720px) {
+    .form-login {
+        padding: 5rem 18rem;
+    }
+}
+
+.formulario input {
+    font-size: .6rem;
+    padding: .4rem;
+    border: none;
+    border-radius: 7px;
+}
+
+.formulario button {
+    width: 60%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 20%;
+    font-size: .6rem;
+    padding: .6rem;
+    border: none;
+    border-radius: 7px;
+    font: var(--minha-fonte);
+    background-color: var(--minha-cor-fonte-input);
+}
+
+.formulario button:hover {
+    font-weight: bold;
+    color: var(--minha-cor-fonte);
+    background-color: yellow;
+}
+
+.formulario button:active {
+    font-size: .8rem;
+    padding: .74rem;
 }
 
 section.ficha {
     width: 100%;
+}
+
+section#ficha h1 {
+    color: var(--minha-cor-fonte);
 }
 
 
