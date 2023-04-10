@@ -1,0 +1,11 @@
+.formulario {
+    width: 60%;
+    margin-left: 20%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 2rem 0;
+}

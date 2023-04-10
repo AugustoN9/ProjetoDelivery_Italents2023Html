@@ -1,18 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --minha-cor-fundo: #A9D18E;
+    --minha-fonte: 'Rajdhani';
+    --minha-cor-fonte: #05125d;
+    --minha-cor-fonte-input: #5167e0;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header {
+body {
+    min-height: 100vh;
+    font-family: var(--minha-fonte);
+    background-color: var(--minha-cor-fundo);
+}
+
+/* Estilizando o Header*/
+
+.cabecalho {
+    width: 100%;
+    min-height: 80px;
+    background-image: url("../images/BannerComerBem.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu {
     display: flex;
+}
+
+.menu .ul-menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ul-menu li {
+    list-style: none;
+    padding: .5rem 1rem;
+    color: white;
+    font-size: .9rem;
+}
+
+.ul-menu li a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.user a i {
+    font-size: 1.6rem;
+}
+
+.localizacao {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-nav ul li {
+/* Estilizando o Seção de Mensagens*/
+
+section#mensagens-inicio {
+    padding: 2rem;
+}
+
+section#mensagens-inicio h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    background: -webkit-linear-gradient(#5167e0, #05125d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section#mensagens-inicio h3 {
+    color: var(--minha-cor-fonte);
+}
+
+/* Estilizando o Seção do Input pesquisa*/
+
+section#pesquisa {
+    display: flex;
+    padding: 1rem 0;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+section#pesquisa i {
+    position: absolute;
+    padding-top: .2rem;
+    padding-left: 3rem;
+    font-size: 30px;
+    color: var(--minha-cor-fonte);
+}
+
+#input-pesquisa {
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+    padding: 1.1rem 4rem;
+    border: none;
+    border-radius: 13px;
+    box-shadow: rgba(48, 75, 227, 0.19) 0px 10px 20px, rgba(87, 41, 223, 0.23) 0px 6px 6px;
+}
+
+#input-pesquisa::placeholder {
+    padding-left: 1rem;
+}
+
+#input-pesquisa:focus {
+    outline: none;
+}
+
+#input-pesquisa {
+    color: var(--minha-cor-fonte-input);
+}
+
+
+/* Estilizando o Seção das Categorias*/
+
+section#categorias {
+    display: flex;
+    width: 100%;
+    padding: 3rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#ul-categoria {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+}
+
+#ul-categoria a {
+    margin-top: .9rem;
+    text-decoration: none;
+    border-radius: 9px;
+    padding: .6rem 1rem;
+    box-shadow: rgba(48, 75, 227, 0.19) 0px 10px 20px, rgba(87, 41, 223, 0.23) 0px 6px 6px;
+}
+
+#ul-categoria a:hover {
+    color: yellow;
+    font-weight: bold;
+}
+
+
+/* Estilizando o Seção das Produto*/
+
+section#cards-produtos {
+    width: 95%;
+    margin-left: 2.5%;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
+    flex-wrap: wrap;
 }
+
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    margin: .5rem;
+    border-radius: 9px;
+    box-shadow: rgba(48, 75, 227, 0.19) 0px 10px 20px, rgba(87, 41, 223, 0.23) 0px 6px 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-produto img {
+    width: 100%;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.zoom {
+    overflow: hidden;
+}
+
+.zoom img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.zoom:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.nome-produto {
+    font-size: 1rem;
+    font-weight: var(--minha-fonte);
+    text-align: center;
+}
+
+.card-produto a {
+    text-decoration: none;
+    color: var(--minha-cor-fonte);
+}
+
+/* Estilizando o Seção da Avaliação*/
+
+section#avaliacao {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2rem;
+    text-align: center;
+    border: .2rem outset #5167e0;
+    border-radius: 9px;
+    background-color: white;
+}
+
+#titulo-avaliacao {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--minha-cor-fonte);
+}
+
+/* Estilizando o Footer*/
+
+#menu-rodape {
+    display: flex;
+}
+
+.footer-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-card a {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    width: 8rem;
+    margin-bottom: 4%;
+    padding-top: 4%;
+}
+
+.footer-item {
+    color: #05125d;
+    font-weight: bold;
+}
+
+.footer-card a:hover .footer-item {
+    color: yellow;
+}
+
+.footer-card a:active .footer-item {
+    color: rgba(128, 139, 0, 0.929);
+    font-size: 1rem;
+}
+
+/* formulario */
+
+.formulario {
+    width: 60%;
+    margin-left: 20%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 2rem 0;
+}
+
+section.ficha {
+    width: 100%;
+}
+
+
+
+
+/*
+
+
+
+.ul-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ul-menu li {
+    list-style: none;
+}
+
+.ul-menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+*/

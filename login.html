@@ -10,50 +10,64 @@
         <link rel="stylesheet" href="css/estilo.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><i class="bi bi-list"></i></li>
-                    <li><i class="bi bi-geo-alt"></i></li>
-                    <li>Porto Alegre, RS</li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="produto.html">Produto</a></li>
-                    <li><a href="carrinho.html">Carrinho</a></li>
-                    <li><a href="cadastrar_usuario.html">Cadastro de Usuario</a></li>
-                    <li><a href="cadastrar_produto.html">Cadastro de Produto</a></li>
-                    <li><i class="bi bi-card-image"></i></li>
+        <header class="cabecalho">
+            <nav class="menu">
+                <ul class="ul-menu">
+                    <li class="user"><a href="login.html"><i class="bi
+                                bi-file-person"></i></a></li>
+                    <li class="localizacao"><i class="bi bi-geo-alt"></i>
+                        <p>Porto Alegre, RS</p></li>
+                    <li><img src="images/LogoDeliveryComerBem.png" width="48px"
+                            alt=""></li>
                 </ul>
             </nav>
         </header>
-        <section>
-            <h1>NOME DA EMPRESA</h1>
-            <img src="" alt="">
-        </section>
-        <div>
+
+        <div class="formulario">
+            <h1>Login do Sistema</h1>
             <label for="login">LOGIN</label>
             <input type="text" id="login">
             <label for="senha">SENHA</label>
             <input type="password" id="senha">
-
-            <button>Realizar LOGIN</button>
+            <button>ENTRAR</button>
         </div>
 
         <footer>
-            <ul>
-                <li>
-                    <a href=""><i class="bi bi-house-fill"></i><p>HOME</p></a>
-                </li>
-                <li>
-                    <a href=""><i class="bi bi-emoji-smile"></i><p>PERFIL</p></a>
-                </li>
-                <li>
-                    <a href=""><i class="bi bi-receipt"></i><p>CUPOM</p></a>
-                </li>
-                <li>
-                    <a href=""><i class="bi bi-stickies"></i><p>PEDIDO</p></a>
-                </li>
-            </ul>
+            <nav id="menu-rodape">
+                <ul class="footer-card">
+                    <a href="index.html">
+                        <li class="footer-item">
+                            <i class="bi bi-house-fill"></i>
+                            <p>HOME</p>
+                        </li>
+                    </a>
+                    <a href="cadastrar_usuario.html">
+                        <li class="footer-item">
+                            <i class="bi
+                                bi-file-person"></i>
+                            <p>Cadastro</p><p>Usuario</p>
+                        </li>
+                    </a>
+                    <a href="cadastrar_produto.html">
+                        <li class="footer-item">
+                            <i class="bi bi-upc-scan"></i>
+                            <p>Cadastro</p><p>Produto</p>
+                        </li>
+                    </a>
+                    <a href="carrinho.html">
+                        <li class="footer-item">
+                            <i class="bi bi-cart"></i>
+                            <p>Carrinho</p>
+                        </li>
+                    </a>
+                    <a href="produto.html">
+                        <li class="footer-item">
+                            <i class="bi bi-stickies"></i>
+                            <p>Produto</p>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
         </footer>
     </body>
 </html>

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --minha-cor-fundo: #A9D18E;
+    --minha-fonte: 'Rajdhani';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--minha-fonte);
+    background-color: var(--minha-cor-fundo);
+}
+
+.cabecalho {
+    text-align: center;
+    width: 100vw;
+}
+
+.cabecalho img {
+    width: 25vw;
+}
+
+.menu-mobi {
+    margin-top: -6vw;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.337);
+}
+
+.ul-menu-mobi {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.ul-menu-mobi li {
+    list-style: none;
+    padding: .5rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.ul-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ul-menu li {
+    list-style: none;
+}
+
+.ul-menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
