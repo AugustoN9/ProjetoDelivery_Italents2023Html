@@ -8,6 +8,7 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
         <title>Login</title>
         <link rel="stylesheet" href="css/estilo.css">
+        <script defer src="js/validaLogin.js"></script>
     </head>
     <body>
         <header class="cabecalho">
@@ -17,57 +18,30 @@
                                 bi-file-person"></i></a></li>
                     <li class="localizacao"><i class="bi bi-geo-alt"></i>
                         <p>Porto Alegre, RS</p></li>
-                    <li><img src="images/LogoDeliveryComerBem.png" width="48px"
+                    <li><img src="images/LogoDeliveryComerBem.png" width="64px"
                             alt=""></li>
                 </ul>
             </nav>
         </header>
 
-        <div class="formulario form-login">
+        <div class="logo">
+            <img src="images/LogoDeliveryComerBem.png" width="240px" alt="">
             <h1>Login do Sistema</h1>
+        </div>
+
+        <div class="formulario form-login">
             <label for="login">LOGIN</label>
             <input type="text" id="login">
             <label for="senha">SENHA</label>
             <input type="password" id="senha">
-            <button>ENTRAR</button>
+            <input type="submit" value="ENTRAR" onclick="logar(); return false">
         </div>
 
         <footer>
-            <nav id="menu-rodape">
-                <ul class="footer-card">
-                    <a href="index.html">
-                        <li class="footer-item">
-                            <i class="bi bi-house-fill"></i>
-                            <p>HOME</p>
-                        </li>
-                    </a>
-                    <a href="cadastrar_usuario.html">
-                        <li class="footer-item">
-                            <i class="bi
-                                bi-file-person"></i>
-                            <p>Cadastro</p><p>Usuario</p>
-                        </li>
-                    </a>
-                    <a href="cadastrar_produto.html">
-                        <li class="footer-item">
-                            <i class="bi bi-upc-scan"></i>
-                            <p>Cadastro</p><p>Produto</p>
-                        </li>
-                    </a>
-                    <a href="carrinho.html">
-                        <li class="footer-item">
-                            <i class="bi bi-cart"></i>
-                            <p>Carrinho</p>
-                        </li>
-                    </a>
-                    <a href="produto.html">
-                        <li class="footer-item">
-                            <i class="bi bi-stickies"></i>
-                            <p>Produto</p>
-                        </li>
-                    </a>
-                </ul>
-            </nav>
+            <div id="rodape">
+                <h4>Desenvolvido por @augusto_devN9</h4>
+                <p>2023</p>
+            </div>
         </footer>
     </body>
 </html>

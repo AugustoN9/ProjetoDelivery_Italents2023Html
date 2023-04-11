@@ -24,9 +24,7 @@ body {
 .cabecalho {
     width: 100%;
     min-height: 80px;
-    background-image: url("../images/BannerComerBem.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #000;
 }
 
 .menu {
@@ -36,8 +34,9 @@ body {
 .menu .ul-menu {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    flex-direction: row-reverse;
 }
 
 .ul-menu li {
@@ -278,10 +277,36 @@ section#avaliacao {
     flex-direction: column;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--minha-cor-fonte);
+    text-shadow: white 0.1em 0.1em 0.2em;
+}
+
 @media screen and (min-width:720px) {
     .form-login {
         padding: 5rem 18rem;
     }
+
+    .cabecalho {
+        width: 100%;
+        min-height: 80px;
+        background-image: url("../images/BannerComerBem.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .menu .ul-menu {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+    }
+
 }
 
 .formulario input {
@@ -291,7 +316,23 @@ section#avaliacao {
     border-radius: 7px;
 }
 
-.formulario button {
+.formulario input:focus {
+    outline: none;
+}
+
+.formulario input {
+    margin-top: .5rem;
+    text-decoration: none;
+    border-radius: 9px;
+    padding: .6rem 1rem;
+    box-shadow: rgba(48, 75, 227, 0.19) 0px 10px 20px, rgba(87, 41, 223, 0.23) 0px 6px 6px;
+}
+
+.formulario label {
+    margin-top: .5rem;
+}
+
+.formulario button, .formulario input[type="submit"] {
     width: 60%;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -304,15 +345,21 @@ section#avaliacao {
     background-color: var(--minha-cor-fonte-input);
 }
 
-.formulario button:hover {
+.formulario button:hover, .formulario input[type="submit"]:hover {
     font-weight: bold;
     color: var(--minha-cor-fonte);
     background-color: yellow;
 }
 
-.formulario button:active {
+.formulario button:active, .formulario input[type="submit"]:active {
     font-size: .8rem;
     padding: .74rem;
+}
+
+.formulario h1 {
+    color: var(--minha-cor-fonte);
+    text-shadow: white 0.1em 0.1em 0.2em;
+    margin-top: 1.5rem;
 }
 
 section.ficha {
@@ -323,8 +370,53 @@ section#ficha h1 {
     color: var(--minha-cor-fonte);
 }
 
+#rodape {
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    font: var(--minha-fonte);
+    color: white;
+    font-style: italic;
+    padding: 1rem 0;
+    background-color: #000;
+}
 
 
+/* Estilizando seção voltar-carrinho */
+
+#voltar-carrinho {
+    width: 90%;
+    margin: 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section#card-carrinho {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-radius: 9px;
+    box-shadow: rgba(48, 75, 227, 0.19) 0px 10px 20px, rgba(87, 41, 223, 0.23) 0px 6px 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+section#card-carrinho img {
+    width: 100%;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+section#card-carrinho .adicionar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
 
 /*
 
