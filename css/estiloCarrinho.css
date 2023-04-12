@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --minha-cor-fundo: #A9D18E;
+    --minha-fonte: 'Rajdhani';
+    --minha-cor-fonte: #05125d;
+    --minha-cor-fonte-input: #5167e0;
+}
+
+
+
+
+/* Estilizando seção voltar-carrinho */
+
+#voltar-carrinho {
+    width: 90%;
+    margin: 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#carrinho-resumo {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    -flex-direction: column;
+}
+
+@media screen and (min-width:720px) {
+    #carrinho-resumo {
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+    }
+
+}
+
+section#card-carrinho {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.carrinho-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 5%;
+    border-radius: 9px;
+    box-shadow: rgba(48, 75, 227, 0.19) 0px 10px 20px, rgba(87, 41, 223, 0.23) 0px 6px 6px;
+}
+
+.item-imagem {
+    width: 25%;
+    margin-right: 5%;
+}
+
+.item-imagem img {
+    width: 100%;
+    border-radius: 9px;
+    margin-bottom: -.3rem;
+    padding: 0;
+}
+
+.item-descricao {
+    width: 25%;
+    font-size: 0.7rem;
+}
+
+.item-adicionar, .item-deletar {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item-adicionar i, .item-deletar i {
+    padding: 1.05rem 0;
+}
+
+.campoNum {
+    padding: .3rem 1.5rem;
+    border-radius: 7px;
+}
+
+section#resumo-carrinho {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-left: 2%;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+.total-da-compra, .info-total-carrinho, .cupom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cupom button {
+    margin-left: 1%;
+}
+
+
+.botao a {
+    text-decoration: none;
+}
+
+.botao {
+    width: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 20%;
+    font-size: .3rem;
+    padding: .4rem;
+    border: none;
+    border-radius: 7px;
+    font: var(--minha-fonte);
+    background-color: var(--minha-cor-fonte-input);
+}
+
+
+input[type="text"] {
+    width: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 20%;
+    font-size: .3rem;
+    padding: .4rem;
+    border: none;
+    border-radius: 7px;
+    font: var(--minha-fonte);
+}

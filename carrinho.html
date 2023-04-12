@@ -6,8 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-        <title>Carrinho</title>
+        <title>Carrinho 2 teste</title>
         <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/estiloCarrinho.css">
     </head>
     <body>
         <header class="cabecalho">
@@ -23,46 +24,96 @@
             </nav>
         </header>
         <!--  inicio conteudo  -->
+
         <section id="voltar-carrinho">
             <i class="bi bi-chevron-double-left"></i>
             <p>CARRINHO</p>
             <i class="bi bi-cart-x"></i>
         </section>
-        <section id="card-carrinho">
-            <div>
-                <img
-                    src="images/Carnes-para-hamburguer-veja-as-6-melhores-que-voce-deve-experimentar.jpeg"
-                    alt="imagem do produto">
-            </div>
-            <div>
-                <h1>NOME DO PRODUTO</h1>
-                <div class="adicionar">
-                    <i class="bi bi-dash-square"></i>
-                    <p>1</p>
-                    <i class="bi bi-plus-square"></i>
+        <div id="carrinho-resumo">
+            <section id="card-carrinho">
+                <div class="carrinho-titulo">
+                    <h1>Carrinho</h1>
+                    <p>2 itens</p>
                 </div>
-            </div>
-            <div class="subtotal-item">
-                <i class="bi bi-trash"></i>
-                <p>Valor</p>
-                <p>R$ 39,90</p>
-            </div>
-            <div>
-                <i class="bi bi-cart-plus"></i>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-        </section>
+                <div class="item-carrinho">
+                    <div class="item-imagem">
+                        <img
+                            src="images/Carnes-para-hamburguer-veja-as-6-melhores-que-voce-deve-experimentar.jpeg"
+                            alt="imagem do produto">
+                    </div>
+                    <div class="item-descricao">
+                        <h4>NOME DO PRODUTO</h4>
+                        <p>Hamburguer de carne bovina Angus Uruguaia.</p>
+                    </div>
+                    <div class="item-adicionar">
+                        <i class="bi bi-dash-square"></i>
+                        <p class="campoNum">1</p>
+                        <i class="bi bi-plus-square"></i>
+                    </div>
+                    <div class="item-deletar">
+                        <a href=""><i class="bi bi-x-lg"></i></a>
+                    </div>
+                </div>
+                <div class="item-carrinho">
+                    <div class="item-imagem">
+                        <img
+                            src="images/Carnes-para-hamburguer-veja-as-6-melhores-que-voce-deve-experimentar.jpeg"
+                            alt="imagem do produto">
+                    </div>
+                    <div class="item-descricao">
+                        <h4>NOME DO PRODUTO</h4>
+                        <p>Hamburguer de carne bovina Angus Uruguaia.</p>
+                    </div>
+                    <div class="item-adicionar">
+                        <i class="bi bi-dash-square"></i>
+                        <p class="campoNum">1</p>
+                        <i class="bi bi-plus-square"></i>
+                    </div>
+                    <div class="item-deletar">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+                </div>
+                <div class="item-carrinho">
+                    <div class="item-imagem">
+                        <img
+                            src="images/Carnes-para-hamburguer-veja-as-6-melhores-que-voce-deve-experimentar.jpeg"
+                            alt="imagem do produto">
+                    </div>
+                    <div class="item-descricao">
+                        <h4>NOME DO PRODUTO</h4>
+                        <p>Hamburguer de carne bovina Angus Uruguaia.</p>
+                    </div>
+                    <div class="item-adicionar">
+                        <i class="bi bi-dash-square"></i>
+                        <p class="campoNum">1</p>
+                        <i class="bi bi-plus-square"></i>
+                    </div>
+                    <div class="item-deletar">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+                </div>
+            </section>
 
-        <section>
+            <section id="resumo-carrinho">
+                <h1>Resumo</h1>
+                <div class="info-total-carrinho">
+                    <p>2 itens</p>
+                    <p>R$ 48,00</p>
+                </div>
+                <div class="cupom">
+                    <input type="text" placeholder="Digite seu cupom aqui">
+                    <button class="botao"> <a href="">APLICAR</a></button>
+                </div>
+                <div class="total-da-compra">
+                    <h3>Total</h3>
+                    <p>R$ 48,00</p>
+                </div>
 
-            <div>
-                <p>TOTAL</p>
-                <P>DELIVERY</P>
-            </div>
-            <input type="text" placeholder="Digite seu cupom aqui">
-            <button>APLICAR</button>
-            <button>IR PARA PAGAMENTO</button>
-        </section>
+                <button class="botao"> <a href="">PARA PAGAMENTO</a> </button>
+            </section>
+
+        </div>
 
         <!-- termino conteudo  -->
 
