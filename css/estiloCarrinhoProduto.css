@@ -160,7 +160,7 @@ section#resumo-carrinho {
 .botao a, .botao-add-cart a {
     text-decoration: none;
     font-weight: bold;
-    color: white;
+    -color: white;
 }
 
 .botao {
@@ -174,6 +174,11 @@ section#resumo-carrinho {
     border-radius: 7px;
     font: var(--minha-fonte);
     background-color: var(--minha-cor-fonte-input);
+}
+
+.botao:hover, .botao-add-cart:hover {
+    font-weight: bold;
+    background-color: yellow;
 }
 
 .botao-add-cart {
