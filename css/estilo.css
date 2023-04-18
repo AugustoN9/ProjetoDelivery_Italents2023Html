@@ -289,6 +289,14 @@ section#avaliacao {
     text-shadow: white 0.1em 0.1em 0.2em;
 }
 
+.form-login input::placeholder {
+    font-family: var(--minha-fonte);
+    font-style: italic;
+    font-size: .8rem;
+}
+
+
+
 @media screen and (min-width:720px) {
     .form-login {
         padding: 5rem 18rem;
