@@ -16,8 +16,10 @@ https://auguston9.github.io/ProjetoDelivery_Italents2023Html/
 ##  :beer:Links uteis
           
 Site para pegar icones para colocar na readme do github.
-https://devicon.dev/
+  https://devicon.dev/
 Site para pegar emajis para colocar na readme do github.
-https://gist.github.com/rxaviers/7360908          
+  https://gist.github.com/rxaviers/7360908          
 #Como criar um README para o seu perfil do GitHub
-https://www.alura.com.br/artigos/como-criar-um-readme-para-seu-perfil-github
+  https://www.alura.com.br/artigos/como-criar-um-readme-para-seu-perfil-github
+#Site com editor online de Markdown 
+  https://stackedit.io/app#
