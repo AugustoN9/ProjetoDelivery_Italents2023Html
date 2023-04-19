@@ -13,8 +13,6 @@
 /* Estilizando seção voltar-carrinho */
 
 .voltar-carrinho, .voltar-favorita {
-    width: 90%;
-    margin: 5% 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,7 +21,22 @@
     color: var(--minha-cor-fonte-input);
 }
 
-.bi-heart-fill {
+.voltar-carrinho {
+    width: 80%;
+    margin: 5% 10%;
+}
+
+.voltar-favorita {
+    width: 60%;
+    margin: 5% 20%;
+}
+
+i.bi-heart-fill {
+    color: white;
+    text-shadow: 1px 1px #000;
+}
+
+i.favorito {
     color: red;
 }
 
@@ -66,6 +79,7 @@ section#card-carrinho, section#card-resumo {
     }
 
 }
+
 
 /*
 

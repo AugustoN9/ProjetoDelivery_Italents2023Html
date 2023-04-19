@@ -2,9 +2,34 @@ function logar() {
     var login = document.getElementById('login').value;
     var senha = document.getElementById('senha').value;
 
+    console.log(login + " " + senha);
+
     if (login == "admin" && senha == "admin") {
-        location.href = "index.html";
-    } else {
-        location.href = "login.html";
+        document.querySelector("#mensagem_acesso").insertAdjacentHTML(
+            "afterbegin",
+            `<div class="card-acesso" >
+            <span>Login efetuado com sucesso!</span>
+            </div >`
+        );
+
+        let mensagem = document.querySelector(".mensagem_acesso");
+
+        setInterval(() => {
+            mensagem.style.display = "none";
+        }, 3000);
+
+        window.setTimeout("location.href = 'index.html'", 3500);
     }
+    if (login != "admin" && senha != "admin") {
+        if (login == "" || senha == "") {
+            alert("Campos de usuario ou senha nao foi preenchido!");
+            location.href = "login.html";
+        }
+        else {
+            alert("Campos de usuario e senha incorretos!");
+            location.href = "login.html";
+        }
+    }
+
+
 }
