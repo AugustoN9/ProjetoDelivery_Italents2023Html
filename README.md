@@ -3,7 +3,7 @@
 
 Este é um projeto desenvolvido utilizando tecnolgias web para construcao de um site responsivo de venda de lanches :
 
-O projeto funciona somente com letras minúsculas e sem caracteres especiais. O layout foi desenvolvido utilizando o Grid Layout e a responsabilidade foi integrada com media queries.
+O projeto funciona somente com letras minúsculas e sem caracteres especiais. O layout foi desenvolvido utilizando o Display Flex e a responsabilidade foi integrada com media queries.
 
 ##  :key:Como visualizar?
 
