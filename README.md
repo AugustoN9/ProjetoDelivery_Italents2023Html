@@ -1,4 +1,4 @@
-# #ProjetoDelivery_Italents2023Html
+# *ProjetoDelivery_Italents2023Html*
 # :hamburger:Projeto Delivery
 
 Este é um projeto desenvolvido utilizando tecnolgias web para construcao de um site responsivo de venda de lanches :
