@@ -10,7 +10,7 @@ O projeto funciona somente com letras minúsculas e sem caracteres especiais. O 
 Para visualizar o projeto, basta acessar a página do projeto clicando no link a seguir:
 https://auguston9.github.io/ProjetoDelivery_Italents2023Html/
 
-<a href="https://medium.com/@afonsopacifer/pensando-em-urls-no-github-3517d97249d0 " target="blank_" >Pensando em  URLs no Github</a>
+<a href="https://medium.com/@afonsopacifer/pensando-em-urls-no-github-3517d97249d0 " target="_blank" >Pensando em  URLs no Github</a>
 
 
 ##  :computer:Tecnologias usada
