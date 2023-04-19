@@ -15,11 +15,11 @@ https://auguston9.github.io/ProjetoDelivery_Italents2023Html/
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="60" height="60"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="60" height="60"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60" height="60"/><img src="https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png?w=1390&crop=1" width="70" height="70" />
 ##  :beer:Links uteis
           
-Site para pegar icones para colocar na readme do github.
+* Site para pegar icones para colocar na readme do github.
   https://devicon.dev/
-Site para pegar emajis para colocar na readme do github.
+* Site para pegar emajis para colocar na readme do github.
   https://gist.github.com/rxaviers/7360908          
-#Como criar um README para o seu perfil do GitHub
+* Como criar um README para o seu perfil do GitHub
   https://www.alura.com.br/artigos/como-criar-um-readme-para-seu-perfil-github
-#Site com editor online de Markdown 
+* Site com editor online de Markdown 
   https://stackedit.io/app#
