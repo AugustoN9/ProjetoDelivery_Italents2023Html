@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --minha-cor-fundo: #A9D18E;
+    --minha-fonte: 'Rajdhani';
+    --minha-cor-fonte: #05125d;
+    --minha-cor-fonte-input: #5167e0;
+}
+
+.container {
+    position: relative;
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    padding: 20px;
+    gap: 40px;
+}
+
+.title {
+    color: var(--minha-cor-fonte);
+    text-shadow: white 0.1em 0.1em 0.2em;
+    margin-top: 1.5rem;
+    text-align: center;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+}
+
+.row3 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 20px;
+}
+
+@media(max-width:480px) {
+    .row, .row2, .row3 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+.inputbox {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.inputbox label {
+    position: relative;
+    top: 0;
+    left: 10px;
+    font-size: .9rem;
+    -moz-animation-iteration-count: yellow;
+    transition: .5s;
+    cursor: text;
+    text-transform: uppercase;
+}
+
+.inputbox input {
+    font-family: var(--minha-cor-fonte-input);
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-radius: 9px;
+    padding: .4rem;
+    box-shadow: rgba(48, 75, 227, 0.19) 0px 10px 20px, rgba(87, 41, 223, 0.23) 0px 6px 6px;
+}
+
+.inputbox label:focus, input:focus {
+    outline: none;
+}
+
+.btn button {
+    width: 60%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 20%;
+    font-size: .6rem;
+    padding: .6rem;
+    border: none;
+    border-radius: 7px;
+    font: var(--minha-fonte);
+    background-color: var(--minha-cor-fonte-input);
+}
+
+.btn button:hover:hover {
+    font-weight: bold;
+    color: var(--minha-cor-fonte);
+    background-color: yellow;
+}
+
+.btn button:active:active {
+    font-size: .8rem;
+    padding: .74rem;
+}
+
+.escolha {
+    width: 120%;
+    display: flex;
+    justify-content: space-between;
+}
