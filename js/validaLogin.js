@@ -22,7 +22,7 @@ function logar() {
 
         window.setTimeout("location.href = 'index.html'", 3000);
     }
-    if (login != "admin" && senha != "admin") {
+    if (login != "admin" || senha != "admin") {
         if (login == "" || senha == "") {
             //alert("Campos de usuario ou senha nao foi preenchido!");
             Swal.fire({

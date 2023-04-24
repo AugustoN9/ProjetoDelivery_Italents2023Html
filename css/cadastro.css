@@ -111,3 +111,9 @@
     display: flex;
     justify-content: space-between;
 }
+
+#erroSenhaForca {
+    background-color: black;
+    border-radius: 9px;
+    padding: 0.3rem;
+}

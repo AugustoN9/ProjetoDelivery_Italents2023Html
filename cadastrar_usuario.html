@@ -10,7 +10,8 @@
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="stylesheet" href="css/cadastro.css">
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="js/apiCep.js" defer></script>
+        <script defer src="js/apiCep.js"></script>
+        <script defer src="js/validarSenha.js"></script>
     </head>
     <body>
         <header class="cabecalho">
@@ -67,18 +68,24 @@
             </div>
             <h3 class="">Definir Senha</h3>
             <div class="row">
+                <div id="impSenha"></div>
+                <div id="impForcaSenha"></div>
+                <div id="erroSenhaForca"></div>
+                <div id="impComparaSenhas"></div>
                 <div class="inputbox">
-                    <input type="password" name="" id="senha" required>
+                    <input type="password" name="" id="senha"
+                        onkeyup="validarSenhaForca()" required>
                     <label for="senha">Senha</label>
                 </div>
                 <div class="inputbox">
-                    <input type="password" name="" id="repetirsenha"
+                    <input type="password" name=""
+                        id="repetirSenha" onkeyup=""
                         required>
                     <label for="repetirsenha">Repetir Senha</label>
                 </div>
             </div>
             <div class="btn">
-                <button>Cadastrar Usuario</button>
+                <button onclick="compararSenhas()">Cadastrar Usuario</button>
             </div>
         </section>
 
