@@ -9,24 +9,24 @@ function validarSenhaForca() {
 
 
     if ((password.length > 5) && (password.length < 7)) {
-        alert("Senha deve ter no minimo 6 caracteres!")
+        //alert("Senha deve ter no minimo 6 caracteres!")
     } else if (password.length > 10) {
         document.getElementById('senha').value = "";
         alert("Senha deve ter no maximo 10 caracteres!")
     } else {
-        if ((password.length >= 6) && (password.length <= 7)) {
+        if (password.length <= 5) {
             forca += 10;
-        } else if (password.length > 7) {
-            forca += 25;
+        } else if (password.length >= 6) {
+            forca += 15;
         }
-        if ((password.length >= 5) && (password.match(/[a-z]+/))) {
-            forca += 10;
+        if ((password.length >= 6) && (password.match(/[a-z]+/))) {
+            forca += 15;
         }
-        if ((password.length >= 6) && (password.match(/[A-Z]+/))) {
-            forca += 20;
+        if ((password.length >= 7) && (password.match(/[A-Z]+/))) {
+            forca += 30;
         }
-        if ((password.length >= 7) && (password.match(/[@#$%&*!/?;]/))) {
-            forca += 25;
+        if ((password.length >= 8) && (password.match(/[@#$%&*!/?;]/))) {
+            forca += 40;
         }
 
         mostrarForca(forca);
@@ -72,6 +72,19 @@ function compararSenhas() {
 
 }
 
+let mensagem = document.querySelector(".dicaComFazerSenha");
 
+// mostra a mensagem
+function showMessage() {
+    var s1 = document.getElementById('senha').value;
+    if (s1 == "") {
+        mensagem.style.display = "block";
+    }
+
+}
+// esconde a mensagem
+function hideMessage() {
+    mensagem.style.display = "none";
+}
 
 

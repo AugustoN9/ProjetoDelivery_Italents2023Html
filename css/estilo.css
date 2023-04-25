@@ -49,7 +49,6 @@ body {
 .ul-menu li a {
     text-decoration: none;
     color: inherit;
-
 }
 
 .user a i {
@@ -361,7 +360,7 @@ section#avaliacao {
     outline: none;
 }
 
-.formulario input {
+.formulario input, .selectCategorias {
     margin-top: .5rem;
     text-decoration: none;
     border-radius: 9px;

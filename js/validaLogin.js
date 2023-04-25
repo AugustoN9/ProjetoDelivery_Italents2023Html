@@ -7,12 +7,14 @@ function logar() {
     console.log(login + " " + senha);
 
     if (login == "admin" && senha == "admin") {
+
         document.querySelector("#mensagem_acesso").insertAdjacentHTML(
             "afterbegin",
             `<div class="card-acesso" >
             <span>Login efetuado com sucesso!</span>
             </div >`
         );
+
 
         let mensagem = document.querySelector(".mensagem_acesso");
 

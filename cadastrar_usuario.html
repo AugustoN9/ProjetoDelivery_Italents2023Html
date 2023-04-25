@@ -12,13 +12,17 @@
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script defer src="js/apiCep.js"></script>
         <script defer src="js/validarSenha.js"></script>
+        <script src="js/validarEmail.js"></script>
     </head>
     <body>
         <header class="cabecalho">
             <nav class="menu">
                 <ul class="ul-menu">
-                    <li class="user"><a href="login.html"><i class="bi
-                                bi-file-person"></i></a></li>
+                    <li class="user">
+                        <a href="login.html">
+                            <i class="bi bi-file-person"></i>
+                        </a>
+                    </li>
                     <li class="localizacao"><i class="bi bi-geo-alt"></i>
                         <p>Porto Alegre, RS</p></li>
                     <li><img src="images/LogoDeliveryComerBem.png" width="64px"
@@ -27,6 +31,9 @@
             </nav>
         </header>
         <section class="container">
+            <div class="userImg">
+                <i class="bi bi-file-person"></i>
+            </div>
             <h1 class="title">Cadastro de Usuario</h1>
             <div class="row">
                 <div class="inputbox">
@@ -34,7 +41,8 @@
                     <label for="nome">Nome</label>
                 </div>
                 <div class="inputbox">
-                    <input type="email" name="" id="email" required>
+                    <input type="email" name="" id="email"
+                        required>
                     <label for="email">Email</label>
                 </div>
             </div>
@@ -72,15 +80,24 @@
                 <div id="impForcaSenha"></div>
                 <div id="erroSenhaForca"></div>
                 <div id="impComparaSenhas"></div>
+                <div class="dicaComFazerSenha">
+                    <p>A senha deve conter numeros,
+                        letras e caracteres especiais, pelo menos uma letra
+                        maiuscula.</p>
+                </div>
                 <div class="inputbox">
+
                     <input type="password" name="" id="senha"
-                        onkeyup="validarSenhaForca()" required>
+                        onkeyup="validarSenhaForca()"
+                        onmouseover="showMessage()" onmouseout="hideMessage()"
+                        required>
                     <label for="senha">Senha</label>
                 </div>
                 <div class="inputbox">
                     <input type="password" name=""
                         id="repetirSenha" onkeyup=""
                         required>
+
                     <label for="repetirsenha">Repetir Senha</label>
                 </div>
             </div>
