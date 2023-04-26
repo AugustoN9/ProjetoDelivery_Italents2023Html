@@ -11,6 +11,10 @@ O projeto funciona somente com letras minúsculas e sem caracteres especiais. O 
 Para visualizar o projeto, basta acessar a página do projeto clicando no link a seguir:
 https://auguston9.github.io/ProjetoDelivery_Italents2023Html/
 
+##  :movie
+
+<video src="https://drive.google.com/file/d/18o6Bb4V4WbmV_3-UoWhPmNSQ9eWm4_Pp/view?usp=share_link" controls autoplay muted loop width="480" poster=""></video>
+
 
 ##  :computer:Tecnologias usada
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="60" height="60"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="60" height="60"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60" height="60"/><img src="https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png?w=1390&crop=1" width="70" height="70" />
