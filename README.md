@@ -14,7 +14,9 @@ https://auguston9.github.io/ProjetoDelivery_Italents2023Html/
 ##  😎
 
 Comentário em video sobre o projeto clicando no link a seguir:
-https://drive.google.com/file/d/18o6Bb4V4WbmV_3-UoWhPmNSQ9eWm4_Pp/view?usp=share_link
+https://youtu.be/Sq28zh_bPEw
+
+
 
 ##  :computer:Tecnologias usada
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="60" height="60"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="60" height="60"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60" height="60"/><img src="https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png?w=1390&crop=1" width="70" height="70" />
