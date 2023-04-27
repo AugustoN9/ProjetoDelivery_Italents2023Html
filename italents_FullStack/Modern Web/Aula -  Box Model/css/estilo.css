@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+    background-color: #424242;
+}
+
+p {
+    color: #fff;
+    font-style: italic;
+    background-color: navy;
+    width: 50%;
+    height: auto;
+    margin: 40px 60px;
+    padding: 25px;
+    border: 6px solid yellow;
+    border-radius: 19px;
+    box-shadow: 16px 16px 16px white;
+}
+
+input {
+    margin: 80px;
+    font-size: x-large;
+    outline: none;
+}
+
+.particulas, .particulas2 {
+    margin: 10vw;
+    padding: 8rem;
+    color: #fff;
+    border: 3px dotted #fff;
+    border-radius: 12px;
+}
+
+.particulas ul {
+    list-style-image: url("../image/Right-Arrow-PNG-Clipart\ -\ .png");
+    list-style-position: inside;
+}
+
+.particulas2 ol {
+    text-transform: uppercase;
+    list-style: upper-roman;
+}
+
+table {
+    margin: 10vw;
+    padding: 8px;
+    color: yellow;
+    border-collapse: collapse;
+}
+
+table th, td, tr {
+    border: 2px solid #fff;
+    padding: .5rem;
+    margin: 2rem;
+}
+
+caption {
+    caption-side: bottom;
+}

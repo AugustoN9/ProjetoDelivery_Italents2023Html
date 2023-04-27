@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.b1 {
+    background-color: lightblue;
+}
+
+.b2 {
+    background-color: yellow;
+}
+
+.b3 {
+    background-color: darkslategrey;
+}
+
+.container1 div, .container2 div, .container3 div {
+    width: 33vw;
+    height: 20vh;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container3 div, .container4 div {
+    border: 1px solid blue;
+    background-color: black;
+    font-size: 42px;
+    color: yellow;
+    padding: 10px;
+}
